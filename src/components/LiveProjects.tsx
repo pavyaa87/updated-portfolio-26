@@ -21,7 +21,7 @@ const liveProjects = [
 const LiveProjects = () => {
   return (
     <div className="live-projects-section" id="live-projects">
-      <div className="section-container">
+      <div className="live-projects-container section-container">
         <h2>
           Live <span>Projects</span>
         </h2>
