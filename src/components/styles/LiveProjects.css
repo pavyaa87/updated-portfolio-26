@@ -1,0 +1,109 @@
+/* ── Live Projects Section ── */
+.live-projects-section {
+  position: relative;
+  z-index: 1;
+  background-color: var(--backgroundColor);
+  padding: 80px 0;
+}
+
+.live-projects-section h2 {
+  font-size: 70px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.live-projects-section h2 > span {
+  color: var(--accentColor);
+}
+
+.live-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+}
+
+.live-project-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 35px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.live-project-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--accentColor);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px -10px rgba(94, 234, 212, 0.15);
+}
+
+.live-project-header h3 {
+  font-size: 32px;
+  margin: 0 0 15px 0;
+  color: #fff;
+  font-weight: 500;
+}
+
+.live-project-header p {
+  color: #adacac;
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 200;
+  margin: 0;
+}
+
+.live-project-features {
+  margin-top: auto;
+  padding-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.live-project-features span {
+  display: inline-block;
+  background: rgba(94, 234, 212, 0.1);
+  color: var(--accentColor);
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0 8px 8px 0;
+}
+
+.live-project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accentColor);
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 15px;
+  font-size: 16px;
+  transition: opacity 0.3s ease;
+}
+
+.live-project-link:hover {
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 900px) {
+  .live-projects-section {
+    padding: 50px 0;
+  }
+
+  .live-projects-section h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .live-project-card {
+    padding: 25px;
+  }
+  
+  .live-project-header h3 {
+    font-size: 26px;
+  }
+}

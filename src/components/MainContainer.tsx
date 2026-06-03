@@ -7,6 +7,7 @@ import Landing from "./Landing";
 import Navbar from "./Navbar";
 import SocialIcons from "./SocialIcons";
 import WhatIDo from "./WhatIDo";
+import LiveProjects from "./LiveProjects";
 import Work from "./Work";
 import setSplitText from "./utils/splitText";
 
@@ -42,6 +43,7 @@ const MainContainer = ({ children }: PropsWithChildren) => {
             <About />
             <WhatIDo />
             <Career />
+            <LiveProjects />
             <Work />
             {isDesktopView && (
               <Suspense fallback={<div>Loading....</div>}>
